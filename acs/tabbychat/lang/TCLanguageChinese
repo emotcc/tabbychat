@@ -133,17 +133,3 @@ public class TCLanguageChinese extends TCLanguage {
                 defaults.setProperty("messages.update3", "Visit the TabbyChat forum thread at minecraftforum.net to download");
         }
 }
-
-    Status
-    API
-    Training
-    Shop
-    Blog
-    About
-
-    © 2013 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Contact
-
