@@ -1,0 +1,149 @@
+package acs.tabbychat.lang;
+
+import java.util.Properties;
+
+public class TCLanguageChinese extends TCLanguage {
+        protected static String provides;
+        protected final static Properties defaults = new Properties();
+        static {
+                provides = "zh_CN";
+                defaults.clear();
+                // Chinese, from emotcc
+                // Chinese STRINGS FOR DELIMITERS
+                defaults.setProperty("delims.angles", "<\u89D2\u62EC\u53F7>");
+                defaults.setProperty("delims.braces", "{\u5927\u62EC\u53F7}");
+                defaults.setProperty("delims.brackets", "[\u65B9\u62EC\u53F7]");
+                defaults.setProperty("delims.parenthesis", "(\u62EC\u53F7)");
+                defaults.setProperty("delims.anglesparenscombo", "<(\u7EC4\u5408)Pl.>");
+                defaults.setProperty("delims.anglesbracketscombo", "<[\u7EC4\u5408]Pl.>");
+                
+                // Chinese STRINGS FOR COLORS
+                defaults.setProperty("colors.default", "\u6807\u51C6");
+                defaults.setProperty("colors.darkblue", "\u6DF1\u84DD\u8272");
+                defaults.setProperty("colors.darkgreen", "\u6DF1\u7EFF\u8272");
+                defaults.setProperty("colors.darkaqua", "\u6E56\u84DD\u8272");
+                defaults.setProperty("colors.darkred", "\u6DF1\u7EA2\u8272");
+                defaults.setProperty("colors.purple", "\u7D2B\u8272");
+                defaults.setProperty("colors.gold", "\u91D1\u8272");
+                defaults.setProperty("colors.gray", "\u7070\u8272");
+                defaults.setProperty("colors.darkgray", "\u6DF1\u7070\u8272");
+                defaults.setProperty("colors.indigo", "\u975B\u84DD\u8272");
+                defaults.setProperty("colors.brightgreen", "\u9C9C\u7EFF\u8272");
+                defaults.setProperty("colors.aqua", "\u6C34\u84DD\u8272");
+                defaults.setProperty("colors.red", "\u7EA2\u8272");
+                defaults.setProperty("colors.pink", "\u7C89\u8272");
+                defaults.setProperty("colors.yellow", "\u9EC4\u8272");
+                defaults.setProperty("colors.white", "\u767D\u8272");
+                
+                // Chinese STRINGS FOR FORMATS
+                defaults.setProperty("formats.default", "\u6807\u51C6");
+                defaults.setProperty("formats.bold", "\u7C97\u4F53");
+                defaults.setProperty("formats.striked", "\u5220\u9664\u7EBF");
+                defaults.setProperty("formats.underline", "\u4E0B\u5212\u7EBF");
+                defaults.setProperty("formats.italic", "\u659C\u4F53");
+                
+                // Chinese STRINGS FOR SOUNDS
+                defaults.setProperty("sounds.orb", "\u7ECF\u9A8C\u7403");
+                defaults.setProperty("sounds.anvil", "\u94C1\u7827");
+                defaults.setProperty("sounds.bowhit", "\u5F13\u7BAD\u5C04\u4E2D");
+                defaults.setProperty("sounds.break", "\u7834\u635F");
+                defaults.setProperty("sounds.click", "\u70B9\u51FB");
+                defaults.setProperty("sounds.glass", "\u73BB\u7483");
+                defaults.setProperty("sounds.bass", "\u4F4E\u97F3");
+                defaults.setProperty("sounds.harp", "\u7AD6\u7434");
+                defaults.setProperty("sounds.pling", "Pling");
+                defaults.setProperty("sounds.cat", "\u732B");
+                defaults.setProperty("sounds.blast", "\u7206\u70B8");
+                defaults.setProperty("sounds.splash", "\u6E85\u8D77\u6C34\u82B1");
+                defaults.setProperty("sounds.swim", "\u6E38\u6CF3");
+                defaults.setProperty("sounds.bat", "\u8759\u8760");
+                defaults.setProperty("sounds.blaze", "Blaze");
+                defaults.setProperty("sounds.chicken", "\u9E21");
+                defaults.setProperty("sounds.cow", "\u725B");
+                defaults.setProperty("sounds.dragon", "\u9F99");
+                defaults.setProperty("sounds.endermen", "\u672B\u5F71\u4EBA");
+                defaults.setProperty("sounds.ghast", "\u6076\u9B42");
+                defaults.setProperty("sounds.pig", "\u732A");
+                defaults.setProperty("sounds.wolf", "\u72FC");
+                
+                // Chinese STRINGS FOR SETTINGS - COMMON
+                defaults.setProperty("settings.save", "\u4FDD\u5B58");
+                defaults.setProperty("settings.cancel", "\u53D6\u6D88");
+                defaults.setProperty("settings.new", "\u65B0\u5EFA");
+                defaults.setProperty("settings.delete", "\u5220\u9664");
+                
+                // Chinese STRINGS FOR SETTINGS - 'GENERAL CONFIG'
+                defaults.setProperty("settings.general.name", "\u5E38\u89C4\u8BBE\u7F6E");
+                defaults.setProperty("settings.general.tabbychatenable", "\u542F\u7528 TabbyChat");
+                defaults.setProperty("settings.general.savechatlog", "\u4FDD\u5B58\u804A\u5929\u8BB0\u5F55");
+                defaults.setProperty("settings.general.timestampenable", "\u5F00\u542F\u804A\u5929\u65F6\u95F4\u6807\u8BB0");
+                defaults.setProperty("settings.general.timestampstyle", "\u65F6\u95F4\u6807\u8BB0 - \u683C\u5F0F");
+                defaults.setProperty("settings.general.timestampcolor", "\u65F6\u95F4\u6807\u8BB0 - \u989C\u8272");
+                defaults.setProperty("settings.general.groupspam", "Consolidate spammed chat");
+                defaults.setProperty("settings.general.unreadflashing", "Default unread notification flashing");
+                defaults.setProperty("settings.general.spellcheckenable", "Enable Spell-checking");
+                
+                // Chinese STRING FOR SETTINGS - 'SERVER CONFIG'
+                defaults.setProperty("settings.server.name", "Server");
+                defaults.setProperty("settings.server.autochannelsearch", "Auto-search for new channels");
+                defaults.setProperty("settings.server.autopmsearch", "Auto-search for new PMs");
+                defaults.setProperty("settings.server.delimiterchars", "Chat-channel delimiters");
+                defaults.setProperty("settings.server.delimcolorbool", "Colored delimiters");
+                defaults.setProperty("settings.server.delimformatbool", "Formatted delimiters");
+                defaults.setProperty("settings.server.defaultchannels", "Default channels");
+                defaults.setProperty("settings.server.ignoredchannels", "Ignored channels");
+                
+                // Chinese STRING FOR SETTINGS - 'CUSTOM FILTERS'
+                defaults.setProperty("settings.filters.name", "Filters");
+                defaults.setProperty("settings.filters.inversematch", "Inverse match");
+                defaults.setProperty("settings.filters.casesensitive", "Case sensitive");
+                defaults.setProperty("settings.filters.highlightbool", "Highlight matches");
+                defaults.setProperty("settings.filters.highlightcolor", "Color");
+                defaults.setProperty("settings.filters.highlightformat", "Format");
+                defaults.setProperty("settings.filters.audionotificationbool", "Audio notification");
+                defaults.setProperty("settings.filters.audionotificationsound", "Sound");
+                defaults.setProperty("settings.filters.filtername", "Filter Name");
+                defaults.setProperty("settings.filters.sendtotabbool", "Send matches to tab");
+                defaults.setProperty("settings.filters.sendtotabname", "Tab Name");
+                defaults.setProperty("settings.filters.sendtoalltabs", "All tabs");
+                defaults.setProperty("settings.filters.removematches", "Hide matches from chat");
+                defaults.setProperty("settings.filters.expressionstring", "Expression");
+                
+                // Chinese STRINGS FOR SETTINGS - 'ADVANCED SETTINGS'
+                defaults.setProperty("settings.advanced.name", "Advanced");
+                defaults.setProperty("settings.advanced.chatscrollhistory", "Chat history to retain (lines)");
+                defaults.setProperty("settings.advanced.maxlengthchannelname", "Channel name max. length");
+                defaults.setProperty("settings.advanced.multichatdelay", "Multi-chat send delay (ms)");
+                defaults.setProperty("settings.advanced.chatboxunfocheight", "Unfocused Height");
+                defaults.setProperty("settings.advanced.chatfadeticks", "Chat fade time (ticks)");
+                defaults.setProperty("settings.advanced.forceunicode", "Force Unicode Chat Rendering");
+                defaults.setProperty("settings.advanced.textignoreopacity", "Text ignores opacity setting");
+                
+                // Chinese STRINGS FOR SETTINGS - CHAT CHANNEL
+                defaults.setProperty("settings.channel.notificationson", "Unread Notifications");
+                defaults.setProperty("settings.channel.alias", "Alias");
+                defaults.setProperty("settings.channel.cmdprefix", "Chat command prefix");
+                defaults.setProperty("settings.channel.position", "Position:");
+                defaults.setProperty("settings.channel.of", "of");
+                defaults.setProperty("settings.channel.hideprefix", "Hide prefix while typing");
+                
+                // Chinese STRINGS FOR MESSAGES
+                defaults.setProperty("messages.update1", "An update is available! (Current version is ");
+                defaults.setProperty("messages.update2", ", newest is ");
+                defaults.setProperty("messages.update3", "Visit the TabbyChat forum thread at minecraftforum.net to download");
+        }
+}
+
+    Status
+    API
+    Training
+    Shop
+    Blog
+    About
+
+    © 2013 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Contact
+
