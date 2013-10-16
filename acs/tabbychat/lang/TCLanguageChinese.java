@@ -79,7 +79,7 @@ public class TCLanguageChinese extends TCLanguage {
                 defaults.setProperty("settings.general.timestampenable", "\u5F00\u542F\u804A\u5929\u65F6\u95F4\u6807\u8BB0");
                 defaults.setProperty("settings.general.timestampstyle", "\u65F6\u95F4\u6807\u8BB0 - \u683C\u5F0F");
                 defaults.setProperty("settings.general.timestampcolor", "\u65F6\u95F4\u6807\u8BB0 - \u989C\u8272");
-                defaults.setProperty("settings.general.groupspam", "Consolidate spammed chat");
+                defaults.setProperty("settings.general.groupspam", "\u5783\u573E\u90AE\u4EF6\u603B\u4F53");
                 defaults.setProperty("settings.general.unreadflashing", "\u9ED8\u8BA4\u672A\u8BFB\u4FE1\u606F\u95EA\u70C1");
                 defaults.setProperty("settings.general.spellcheckenable", "\u542F\u7528\u62FC\u5199\u68C0\u67E5");
                 
@@ -114,7 +114,7 @@ public class TCLanguageChinese extends TCLanguage {
                 defaults.setProperty("settings.advanced.chatscrollhistory", "\u804A\u5929\u8BB0\u5F55\u4FDD\u7559 (\u6761)");
                 defaults.setProperty("settings.advanced.maxlengthchannelname", "\u9891\u9053\u540D\u79F0\u6700\u5927\u957F\u5EA6");
                 defaults.setProperty("settings.advanced.multichatdelay", "\u591A\u804A\u5929\u53D1\u9001\u5EF6\u8FDF\u65F6\u95F4 (\u6BEB\u79D2)");
-                defaults.setProperty("settings.advanced.chatboxunfocheight", "Unfocused Height");
+                defaults.setProperty("settings.advanced.chatboxunfocheight", "\u7126\u70B9\u9AD8\u5EA6");
                 defaults.setProperty("settings.advanced.chatfadeticks", "\u804A\u5929\u6DE1\u5165\u6DE1\u51FA\u65F6\u95F4 (ticks)");
                 defaults.setProperty("settings.advanced.forceunicode", "\u5F3A\u5236 Unicode\u7F16\u7801 \u6E32\u67D3\u804A\u5929");
                 defaults.setProperty("settings.advanced.textignoreopacity", "\u6587\u5B57\u4E0D\u900F\u660E\u5EA6\u8BBE\u7F6E");
