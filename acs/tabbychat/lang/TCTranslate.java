@@ -24,6 +24,7 @@ public class TCTranslate {
 		langSupport.put("sv_SE", TCLanguageSwedish.class);
 		langSupport.put("fr_FR", TCLanguageFrench.class);
 		langSupport.put("fi_FI", TCLanguageFinnish.class);
+		langSupport.put("zh_CN", TCLanguageChinese.class);
 	}
 	
 	public TCTranslate(String _lang) {
